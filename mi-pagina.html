@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<script>
+	
+function repeat() {
+	let keyname = 'file.PDF'
+	let fileType
+	const fileExtension = (keyname) ? keyname.split('.').pop().toLowerCase() : ''
+	console.log(fileExtension)
+  	switch(fileExtension) {
+  		case 'pdf': 
+  			fileType = 'application/pdf'
+  			break
+  		case 'csv':
+  			fileType = 'text/csv'
+  			break
+  		default:
+  			fileType = 'undefined'
+  			break
+  	}
+  	console.log(fileType)
+}
+
+repeat()
+
+</script>
+
+</body>
+</html>
